@@ -1,0 +1,89 @@
+@media (max-width: 479px){
+	.tab-booking .nav-tabs li a {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 359px){
+	.tab-booking .item-room .action .button-action span {
+		font-size: 11px;
+		text-align: center;
+		-webkit-transform:unset;
+    	transform: unset; 
+	}
+
+	.tab-booking .item-room .action .button-action {
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+/*===================================*/
+
+/* giao dien front end 2 */
+
+/* button login and register */
+.LoginAndRegister {
+	position: fixed;
+	top: 50%;
+	left: -135px;
+	height: 89px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+.LoginAndRegister .wrapBtn {
+	position: relative;
+	height: 89px;
+}
+
+.LoginAndRegister .btn {
+	font-size: 16px;
+	color: #fff;
+	background-color: #5b5541;
+	display: block;
+	padding: 0;
+	width: 185px;
+	text-align: right;
+	position: absolute;
+	left:0;
+	transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.LoginAndRegister .btnLogin {
+	top: 0;
+}
+
+.LoginAndRegister .btnRegister {
+	bottom: 0;
+}
+
+.LoginAndRegister .btn .text,
+.LoginAndRegister .btn .icon {
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+.LoginAndRegister .btn .text {
+	width: 135px;
+	text-align: center;
+}
+
+.LoginAndRegister .btn .icon {
+	background-color: #af983d;
+	width: 50px;
+	text-align: center;
+}
+
+.LoginAndRegister .btn:hover {
+	left: 135px;
+}
+
+/* end button login and register */

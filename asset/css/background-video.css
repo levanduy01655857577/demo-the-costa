@@ -1,0 +1,401 @@
+#background-video {
+	display: grid;
+	grid-template-rows: 100vh;
+	overflow: hidden;
+	box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.7);
+}
+
+#background-video * {
+	font-family: 'Lato', sans-serif;
+}
+
+#background-video .video-bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+#background-video .video-bg::-webkit-media-controls {
+	display: none !important;
+}
+
+#background-video .video-overlay {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+#background-video .video-overlay h1::-moz-selection {
+	background-color: rgba(0, 0, 0, 0.75);
+	color: #fff;
+}
+
+#background-video .video-overlay h1::selection {
+	background-color: rgba(0, 0, 0, 0.75);
+	color: #fff;
+}
+
+#background-video .video-overlay .redirect-button {
+	top: 42%;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+}
+
+#background-video .video-overlay .redirect-button a {
+	color: #fff;
+	padding: 15px 25px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+#background-video .video-overlay .redirect-button a .icon {
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 49px;
+	margin: 0 auto;
+	background: transparent;
+	color: #000;
+	border-radius: 50%;
+	font-size: 28px;
+	margin-bottom: 8px;
+}
+
+#background-video .video-overlay .redirect-button a .icon img {
+	height: 50px;
+}
+
+#background-video .video-overlay .redirect-button a .icon:hover {
+	opacity: 0.8;
+}
+
+#background-video .video-overlay .redirect-button a:hover,
+#background-video .video-overlay .redirect-button a:focus {
+	text-decoration: none;
+	color: #fff;
+}
+
+#background-video .video-overlay .redirect-button a:first-child {
+	margin-right: 10%;
+}
+
+#background-video .video-overlay .logo {
+	top: 10%;
+	position: absolute;
+	width: 100%;
+}
+
+#background-video .video-overlay .flipper-container.redirect-home {
+	padding: 0;
+	border: none;
+	margin: 200px 0 0 0 !important
+}
+
+#background-video .background-mobile {
+	background-image: url(./asset/image/travel13.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 0;
+	visibility: hidden;
+}
+
+.btn-bg.bg-button {
+	background: transparent;
+	display: inline-block;
+	width: 100%;
+}
+.btn-bg.bg-button .animation-button a {
+  color: #fff !important;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  border-bottom: none !important;
+  font-size: 30px !important;
+	background: rgba(0, 0, 0, 0.13);
+	animation-name: translateButton;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+.btn-bg.bg-button {
+	overflow: hidden;
+	animation-name: translateBlockButton;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+.btn-bg.bg-button .animation-button a:hover {
+  background: transparent;
+  color: #D9CB8D !important;
+}
+.btn-bg.bg-button .animation-button a:hover:before,
+.btn-bg.bg-button .animation-button a:hover:after {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  width: 100%;
+}
+.btn-bg.bg-button .animation-button a:before,
+.btn-bg.bg-button .animation-button a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+
+.btn-bg.bg-button .animation-button a:before {
+	background: #C8B770 !important;
+}
+
+.btn-bg.bg-button .animation-button a:after {
+  top: inherit;
+  left: inherit;
+  bottom: 0;
+  right: 0;
+}
+.animation-button a {
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 1rem 3rem 1rem 3rem;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-size: 1.5em;
+}
+.animation-button a {
+  text-decoration: none;
+}
+
+.flipper-container {
+  text-align: center;
+  margin-top: 40px;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+.flipper {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 300px;
+  height: 50px;
+  background-color: transparent;
+  -moz-transition: all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  -o-transition: all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  -webkit-transition: all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  transition: all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.flipper:target {
+  -moz-transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+
+.front-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  letter-spacing: 2px;
+  line-height: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  background-color: transparent;
+  color: #fff;
+  text-shadow: 0 1px 1px #000000;
+  -moz-transform: rotateX(0deg) translateZ(2.25em);
+  -ms-transform: rotateX(0deg) translateZ(2.25em);
+  -webkit-transform: rotateX(0deg) translateZ(2.25em);
+  transform: rotateX(0deg) translateZ(2.25em);
+}
+
+@keyframes translateButton {
+  0% {
+		background: rgba(255, 255, 255, 0);
+  }
+  70% {
+		background: rgba(255, 255, 255, 0);
+	}
+	100%{
+		background: rgba(0, 0, 0, 0.13);
+	}
+}
+
+@keyframes translateBlockButton {
+  0% {
+		transform: translateY(-100%);
+  }
+  70% {
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 950px) {
+	#background-video .video-overlay .redirect-button a:first-child {
+		margin-right: 0;
+    margin-bottom: 15px;
+	}
+
+	#background-video .video-overlay .redirect-button a {
+		display: block;
+	}
+
+	.btn-bg.bg-button .animation-button {
+		padding: 0 15px;
+	}
+
+	#background-video .video-overlay .flipper-container.redirect-home {
+		margin: 100px 0 0 0 !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#background-video .background-mobile {
+		visibility: unset;
+		z-index: 1;
+	}
+
+	#background-video .video-overlay {
+		z-index: 2;
+	}
+
+	#background-video > video {
+		display: none;
+	}
+}
+
+@media(max-width: 450px) {
+	.btn-bg.bg-button .animation-button a {
+		font-size: 25px !important;
+	}
+}
+
+@media(max-width: 385px) {
+	.btn-bg.bg-button .animation-button a {
+		font-size: 20px !important;
+	}
+}
+
+@media(max-width: 320px) {
+	.btn-bg.bg-button .animation-button a {
+		font-size: 18px !important;
+	}
+
+	#background-video .video-overlay .flipper-container.redirect-home {
+		margin: 50px 0 0 0 !important;
+	}
+}
+
+@media(max-height: 610px) {
+	.video-overlay .logo img {
+    height: 100px;
+	}
+
+	.btn-bg.bg-button .animation-button a {
+		font-size: 18px !important;
+	}
+
+	#background-video .video-overlay .redirect-button a .icon {
+		width: 40px;
+    height: 40px;
+		line-height: 42px;
+		font-size: 20px;
+	}
+
+	#background-video .video-overlay .redirect-button a .icon img {
+    height: 40px;
+	}
+
+	#background-video .video-overlay .redirect-button {
+		top: 38%;
+	}
+}
+
+@media(max-height: 545px) {
+	.video-overlay .logo img {
+    height: 90px;
+	}
+
+	.btn-bg.bg-button .animation-button a {
+		font-size: 15px !important;
+	}
+
+	#background-video .video-overlay .flipper-container.redirect-home {
+		margin: 60px 0 0 0 !important;
+	}
+}
+
+@media(max-height: 545px) {
+	.btn-bg.bg-button .animation-button a {
+		font-size: 13px !important;
+	}
+
+	#background-video .video-overlay .flipper-container.redirect-home {
+		margin: 30px 0 0 0 !important;
+	}
+}
+
+@media(max-height: 350px) {
+	#background-video .video-overlay .redirect-button {
+		top: 32%;
+	}
+
+	.video-overlay .logo img {
+		height: 60px;
+	}
+
+	.btn-bg.bg-button .animation-button a {
+		font-size: 11px;
+	}
+
+	#background-video .video-overlay .redirect-button a .icon {
+		width: 30px;
+    height: 30px;
+    line-height: 31px;
+    font-size: 15px;
+	}
+
+	#background-video .video-overlay .redirect-button a .icon img {
+		height: 30px;
+	}
+
+	#background-video .video-overlay .flipper-container.redirect-home {
+		margin: 10px 0 0 0 !important;
+	}
+
+	#background-video .video-overlay .redirect-button a {
+		font-size: 12px;
+	}
+}
