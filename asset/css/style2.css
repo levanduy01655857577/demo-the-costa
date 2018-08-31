@@ -95,6 +95,10 @@
 /* end button login and register */
 
 /* modal login */
+.modalLogin .modal-dialog {
+	max-width: 500px;
+}
+
 .modalLogin .modal-content {
 	border-radius: 0;
 	-webkit-border-radius: 0;
@@ -104,60 +108,42 @@
 }
 
 .modalLogin .modal-header {
-	background-image: url(../image/level2/bg-login.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	position: relative;
 	padding: 0;
+	text-align: center;
+	padding: 15px 30px;
 }
 
-.modalLogin .modal-header .wrapTitle {
-	background-color: rgba(91, 85, 65, 0.5);
-	position: relative;
-}
-
-.modalLogin .modal-header .wrapTitle .modal-title {
-	padding:60px 30px;
+.modalLogin .modal-header .modal-title {
 }
 
 .modalLogin .modal-title {
 	text-transform: uppercase;
 	font-size: 30px;
-	color: #fff;
-	float: left;
+	color: #949597;
+	text-align: center;
 }
 
 .modalLogin .logoFrm {
 	width: 100px;
 	height: auto;
-	float: left;
-	padding:24px 0 24px 30px;
 }
 
 .modalLogin .close {
 	position: absolute;
-	right: 30px;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
+	right: 0;
+	top: 0;
 	font-size: 30px;
 	padding: 5px 10px;
 	background-color: #af983d;
 	color: white;
 	opacity: 1;
 	filter: alpha(opacity=100);
+	margin: 0;
 }
 
 .modalLogin .close:hover {
-	transform: translateY(-50%) scale(1.2);
-	-webkit-transform: translateY(-50%) scale(1.2);
-	-moz-transform: translateY(-50%) scale(1.2);
-	-ms-transform: translateY(-50%) scale(1.2);
-	-o-transform: translateY(-50%) scale(1.2);
+	background-color: #000;
 }
 
 .modalLogin .modal-body,
