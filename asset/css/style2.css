@@ -22,6 +22,16 @@
 
 /* giao dien front end 2 */
 
+.LoginAndRegister .btn,
+.modalLogin .close,
+.modalLogin .btn,
+.modalLogin .wrapBtnLogin .bgBlack:before {
+	transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
 /* button login and register */
 .LoginAndRegister {
 	position: fixed;
@@ -50,10 +60,6 @@
 	text-align: right;
 	position: absolute;
 	left:0;
-	transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
     text-transform: uppercase;
 }
 
@@ -87,3 +93,212 @@
 }
 
 /* end button login and register */
+
+/* modal login */
+.modalLogin .modal-content {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.modalLogin .modal-header {
+	background-image: url(../image/level2/bg-login.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 0;
+}
+
+.modalLogin .modal-header .wrapTitle {
+	background-color: rgba(91, 85, 65, 0.5);
+	position: relative;
+}
+
+.modalLogin .modal-header .wrapTitle .modal-title {
+	padding:60px 30px;
+}
+
+.modalLogin .modal-title {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+	float: left;
+}
+
+.modalLogin .logoFrm {
+	width: 100px;
+	height: auto;
+	float: left;
+	padding:24px 0 24px 30px;
+}
+
+.modalLogin .close {
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	font-size: 30px;
+	padding: 5px 10px;
+	background-color: #af983d;
+	color: white;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.modalLogin .close:hover {
+	transform: translateY(-50%) scale(1.2);
+	-webkit-transform: translateY(-50%) scale(1.2);
+	-moz-transform: translateY(-50%) scale(1.2);
+	-ms-transform: translateY(-50%) scale(1.2);
+	-o-transform: translateY(-50%) scale(1.2);
+}
+
+.modalLogin .modal-body,
+.modalLogin .modal-footer {
+	padding: 30px;
+}
+
+.modalLogin form .form-group {
+	margin-bottom: 30px;
+}
+
+.modalLogin form .form-group label {
+	color: #af983d;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.modalLogin form .form-group .input-group {
+	border: 2px solid #c3b088;
+}
+
+.modalLogin form .form-group .form-control,
+.modalLogin form .input-group-addon {
+	border: none;
+	border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    -ms-box-shadow: unset;
+    -o-box-shadow: unset;
+} 
+
+.modalLogin form .form-group .form-control {
+	padding: 30px;
+	font-size: 16px;
+}
+
+.modalLogin form .input-group-addon {
+	padding: 19px 20px;
+	font-size: 20px;
+	color: #af983d;
+}
+
+.modalLogin .wrapBtnLogin .btnLogin {
+	background-color:unset;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 21px 30px;
+	display: block;
+	width: 100%;
+}
+
+.modalLogin .wrapBtnLogin .btnLogin svg {
+	margin-right: 5px;
+}
+
+.modalLogin .wrapBtnLogin .wrapBtnLoginElement {
+	float: left;
+	width: 50%;
+}
+
+.modalLogin .wrapBtnLogin .wrapBtnLoginElement:nth-child(1){
+	padding-right: 15px;
+}
+
+.modalLogin .wrapBtnLogin .wrapBtnLoginElement:nth-child(2){
+	padding-left: 15px;
+}
+
+.modalLogin .wrapBtnLogin .bgBlack {
+	background-color: #000;
+	position: relative;
+}
+
+.modalLogin .wrapBtnLogin .bgBlack:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #af983d;
+	content: '';
+}
+
+.modalLogin .wrapBtnLogin .wrapBtnLoginElement:hover .bgBlack:before {
+	width: 100%;
+}
+
+.modalLogin .wrapBtnLogin .wrapBtnLoginElement:hover .btnLogin {
+	padding-left: 40px;
+}
+
+.modalLogin .modal-footer {
+	position: relative;
+}
+
+.modalLogin .modal-footer .titleOr {
+	position: absolute;
+	padding:0 30px;
+	display: table;
+	background-color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	top: -11px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.modalLogin .btnForgotPass {
+	background-color: unset;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+	background-color: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    -ms-box-shadow: unset;
+    -o-box-shadow: unset;
+    padding: 0;
+    display: table;
+    margin: 30px auto 0 auto;
+}
+
+.modalLogin .btnForgotPass:focus {
+	background-color: unset;
+}
+
+.modalLogin .btnForgotPass:hover {
+	color: #af983d;
+}
+/* end modal login */
