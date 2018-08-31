@@ -25,7 +25,8 @@
 .LoginAndRegister .btn,
 .modalLogin .close,
 .modalLogin .btn,
-.modalLogin .wrapBtnLogin .bgBlack:before {
+.modalLogin .wrapBtnLogin .bgBlack:before,
+.modalLogin .textDescription {
 	transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -111,10 +112,7 @@
 	position: relative;
 	padding: 0;
 	text-align: center;
-	padding: 15px 30px;
-}
-
-.modalLogin .modal-header .modal-title {
+	padding: 20px;
 }
 
 .modalLogin .modal-title {
@@ -125,7 +123,7 @@
 }
 
 .modalLogin .logoFrm {
-	width: 100px;
+	width: 220px;
 	height: auto;
 }
 
@@ -135,7 +133,7 @@
 	top: 0;
 	font-size: 30px;
 	padding: 5px 10px;
-	background-color: #af983d;
+	background-color: #5b5541;
 	color: white;
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -143,26 +141,37 @@
 }
 
 .modalLogin .close:hover {
-	background-color: #000;
+	background-color: #af983d;
 }
 
 .modalLogin .modal-body,
 .modalLogin .modal-footer {
-	padding: 30px;
+	padding: 20px;
 }
 
 .modalLogin form .form-group {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .modalLogin form .form-group label {
 	color: #af983d;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .modalLogin form .form-group .input-group {
 	border: 2px solid #c3b088;
+}
+
+.modalLogin form .form-group .input-group .textDescription {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 14px;
+	color: #949597;
+	margin: 0;
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 
 .modalLogin form .form-group .form-control,
@@ -181,12 +190,17 @@
 } 
 
 .modalLogin form .form-group .form-control {
-	padding: 30px;
-	font-size: 16px;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.modalLogin form .form-group .input-group .form-control:focus ~ .textDescription {
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 
 .modalLogin form .input-group-addon {
-	padding: 19px 20px;
+	padding: 10px 15px;
 	font-size: 20px;
 	color: #af983d;
 }
@@ -194,10 +208,10 @@
 .modalLogin .wrapBtnLogin .btnLogin {
 	background-color:unset;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	padding: 21px 30px;
+	padding: 10px 20px;
 	display: block;
 	width: 100%;
 }
@@ -211,17 +225,36 @@
 	width: 50%;
 }
 
+.modalLogin .wrapBtnLogin.onlyLogin .wrapBtnLoginElement {
+	float: none;
+	display: table;
+	margin: auto;
+	width: 150px;
+}
+
 .modalLogin .wrapBtnLogin .wrapBtnLoginElement:nth-child(1){
-	padding-right: 15px;
+	padding-right: 10px;
+}
+
+.modalLogin .wrapBtnLogin.onlyLogin .wrapBtnLoginElement:nth-child(1){
+	padding-right: 0;
 }
 
 .modalLogin .wrapBtnLogin .wrapBtnLoginElement:nth-child(2){
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .modalLogin .wrapBtnLogin .bgBlack {
 	background-color: #000;
 	position: relative;
+}
+
+.modalLogin .wrapBtnLogin .bgBlack.facebook {
+	background-color: #4267b2;
+}
+
+.modalLogin .wrapBtnLogin .bgBlack.google{
+	background-color: #ea4335;
 }
 
 .modalLogin .wrapBtnLogin .bgBlack:before {
@@ -238,7 +271,7 @@
 	width: 100%;
 }
 
-.modalLogin .wrapBtnLogin .wrapBtnLoginElement:hover .btnLogin {
+.modalLogin .wrapBtnLogin .wrapBtnLoginElement:hover .bgBlack .btnLogin {
 	padding-left: 40px;
 }
 
@@ -258,16 +291,16 @@
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	top: -11px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 	color: #000;
 	text-transform: uppercase;
 }
 
-.modalLogin .btnForgotPass {
+.modalLogin .wrapBtnLogin.registerAndForgotPass .btnLogin {
 	background-color: unset;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 10px;
 	font-weight: 700;
 	color: #000;
 	background-color: unset;
@@ -277,14 +310,27 @@
     -o-box-shadow: unset;
     padding: 0;
     display: table;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
-.modalLogin .btnForgotPass:focus {
+.modalLogin .wrapBtnLogin.registerAndForgotPass .btnLogin svg {
+	margin-left: 5px;
+}
+
+.modalLogin .wrapBtnLogin.registerAndForgotPass .wrapBtnLoginElement:nth-child(1) .btnLogin {
+	text-align: left;
+}
+
+.modalLogin .wrapBtnLogin.registerAndForgotPass .wrapBtnLoginElement:nth-child(2) .btnLogin {
+	text-align: right;
+}
+
+.modalLogin .wrapBtnLogin.registerAndForgotPass .btnLogin:focus {
 	background-color: unset;
 }
 
-.modalLogin .btnForgotPass:hover {
+.modalLogin .wrapBtnLogin.registerAndForgotPass .btnLogin:hover {
 	color: #af983d;
+	padding: 0;
 }
 /* end modal login */

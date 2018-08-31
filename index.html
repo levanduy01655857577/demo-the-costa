@@ -1121,7 +1121,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <img src="asset/image/logo-brown.png" class="logoFrm" />
+          <img src="asset/image/TheCosta_logo_horizontal_new.svg" class="logoFrm" />
           <h4 class="modal-title">login</h4>
         </div>
         <div class="modal-body">
@@ -1129,21 +1129,21 @@
             <div class="form-group">
               <label for="userLogin">User</label>
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Recipient's Username" id="userLogin" aria-describedby="basic-userLogin">
+                <input type="text" class="form-control" id="userLogin" aria-describedby="basic-userLogin">
                 <span class="input-group-addon" id="basic-userLogin"><i class="fas fa-user"></i></span>
+                <span class="help-block textDescription">Recipient's Username</span>
               </div>
             </div>
             <div class="form-group">
               <label for="passLogin">Password</label>
               <div class="input-group">
-                <input type="password" class="form-control" placeholder="Recipient's Password" id="passLogin" aria-describedby="basic-passLogin">
+                <input type="password" class="form-control" id="passLogin" aria-describedby="basic-passLogin">
                 <span class="input-group-addon" id="basic-passLogin"><i class="fas fa-key"></i></span>
+                <span class="help-block textDescription">Recipient's Password</span>
               </div>
             </div>
-            <div class="wrapBtnLogin">
+            <div class="wrapBtnLogin onlyLogin">
               <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-lock"></i>Login</button></div></div>
-              <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-edit"></i>Register</button></div></div>
-              <div class="clearfix"></div>
             </div>
           </form>
         </div>
@@ -1151,12 +1151,16 @@
           <div class="titleOr">or</div>
 
           <div class="wrapBtnLogin">
-            <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-facebook-f"></i>Login Facebook</button></div></div>
-            <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-google"></i>Login Google</button></div></div>
+            <div class="wrapBtnLoginElement"><div class="bgBlack facebook"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-facebook-f"></i>Login Facebook</button></div></div>
+            <div class="wrapBtnLoginElement"><div class="bgBlack google"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-google"></i>Login Google</button></div></div>
             <div class="clearfix"></div>
           </div>
 
-          <button type="submit" class="btn btn-default btnForgotPass">FORGOT PASSWORD<i class="fas fa-angle-double-right"></i></button>
+          <div class="wrapBtnLogin registerAndForgotPass">
+            <div class="wrapBtnLoginElement"><button type="submit" class="btn btn-default btnLogin">Register<i class="fas fa-angle-double-right"></i></button></div>
+            <div class="wrapBtnLoginElement"><button type="submit" class="btn btn-default btnLogin">FORGOT PASSWORD<i class="fas fa-angle-double-right"></i></button></div>
+            <div class="clearfix"></div>
+          </div>
         </div>
       </div>
 
