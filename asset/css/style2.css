@@ -26,7 +26,9 @@
 .modalLogin .close,
 .modalLogin .btn,
 .modalLogin .wrapBtnLogin .bgBlack:before,
-.modalLogin .textDescription {
+.modalLogin .textDescription,
+.slideCheckbox .lblCheckbox .check,
+.slideCheckbox .lblCheckbox {
 	transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -102,7 +104,7 @@
 }
 
 .modalLogin .modal-dialog {
-	max-width: 500px;
+	max-width: 600px;
 }
 
 .modalLogin .modal-content {
@@ -356,14 +358,93 @@
 	width: auto;
 }
 
-#frmForgotPass .wrapBtnLoginElement .btnLogin {
-	margin-top: 0;
+.modalLogin .backLogin .btnLogin {
+	margin-top: 0 !important;
+}
+
+.modalLogin .modal-footer.header {
+	border-top: none;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: left;
+}
+
+.modalLogin .modal-footer.header .titleOr {
+	top: auto;
+	bottom: -11px
+}
+
+/* checkbox */
+.slideCheckbox {
+	width: 44px;
+	height: 24px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+.slideCheckbox .inputCheck {
+	visibility: hidden;
+}
+
+.slideCheckbox .lblCheckbox {
+	width: 44px;
+	height: 24px;
+	margin: 0;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+.slideCheckbox .lblCheckbox .check {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+}
+
+.lblCheckboxText {
+	margin: 2px 0 0 5px;
+}
+
+.slideCheckbox .inputCheck:checked + .lblCheckbox {
+	background-color: #af983d;
+}
+
+.slideCheckbox .inputCheck:checked + .lblCheckbox .check {
+	left: 22px;
+}
+
+.slideCheckbox .lblCheckbox:hover {
+	cursor: pointer;
 }
 
 @media (max-width: 767px){
 	.modalLogin .modal-dialog {
 	    max-width: 100%;
 	    margin: auto;
+	}
+
+	.modalLogin .backLogin .wrapBtnLoginElement {
+		width: 100%;
+		padding: 0 !important;
 	}
 }
 
