@@ -1106,14 +1106,17 @@
     </div>
   </div>
 
+  <!-- group button login and register -->
   <div class="LoginAndRegister">
     <div class="wrapBtn">
-      <button type="button" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmLogin"><span class="text">login</span><span class="icon"><i class="fas fa-lock"></i></span></button>
+      <button type="button" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmLogin" data-dismiss="modal"><span class="text">login</span><span class="icon"><i class="fas fa-lock"></i></span></button>
 
-      <button type="button" class="btn btn-default btnRegister" data-toggle="modal" data-target="#frmRegister"><span class="text">register</span><span class="icon"><i class="fas fa-edit"></i></span></button>
+      <button type="button" class="btn btn-default btnRegister" data-toggle="modal" data-target="#frmRegister" data-dismiss="modal"><span class="text">register</span><span class="icon"><i class="fas fa-edit"></i></span></button>
     </div>
   </div>
+  <!-- end group button login and register -->
 
+  <!-- form login -->
   <div id="frmLogin" class="modal fade modalLogin" role="dialog">
     <div class="modal-dialog">
 
@@ -1127,21 +1130,23 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="userLogin">User</label>
+              <label for="emailLogin">Email address</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="userLogin" aria-describedby="basic-userLogin">
-                <span class="input-group-addon" id="basic-userLogin"><i class="fas fa-user"></i></span>
-                <span class="help-block textDescription">Recipient's Username</span>
+                <input type="text" class="form-control" id="emailLogin" aria-describedby="basic-emailLogin">
+                <span class="input-group-addon" id="basic-emailLogin"><i class="fas fa-envelope"></i></span>
+                <span class="help-block textDescription">Please enter email address</span>
               </div>
             </div>
+
             <div class="form-group">
               <label for="passLogin">Password</label>
               <div class="input-group">
                 <input type="password" class="form-control" id="passLogin" aria-describedby="basic-passLogin">
                 <span class="input-group-addon" id="basic-passLogin"><i class="fas fa-key"></i></span>
-                <span class="help-block textDescription">Recipient's Password</span>
+                <span class="help-block textDescription">Please enter password</span>
               </div>
             </div>
+
             <div class="wrapBtnLogin onlyLogin">
               <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-lock"></i>Login</button></div></div>
             </div>
@@ -1150,15 +1155,15 @@
         <div class="modal-footer">
           <div class="titleOr">or</div>
 
-          <div class="wrapBtnLogin">
+          <div class="wrapBtnLogin widthFacebookGoogle">
             <div class="wrapBtnLoginElement"><div class="bgBlack facebook"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-facebook-f"></i>Login Facebook</button></div></div>
             <div class="wrapBtnLoginElement"><div class="bgBlack google"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-google"></i>Login Google</button></div></div>
             <div class="clearfix"></div>
           </div>
 
           <div class="wrapBtnLogin registerAndForgotPass">
-            <div class="wrapBtnLoginElement"><button type="submit" class="btn btn-default btnLogin">Register<i class="fas fa-angle-double-right"></i></button></div>
-            <div class="wrapBtnLoginElement"><button type="submit" class="btn btn-default btnLogin">FORGOT PASSWORD<i class="fas fa-angle-double-right"></i></button></div>
+            <div class="wrapBtnLoginElement"><button type="button" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmRegister" data-dismiss="modal">Register<i class="fas fa-angle-double-right"></i></button></div>
+            <div class="wrapBtnLoginElement"><button type="button" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmForgotPass" data-dismiss="modal">FORGOT PASSWORD<i class="fas fa-angle-double-right"></i></button></div>
             <div class="clearfix"></div>
           </div>
         </div>
@@ -1166,6 +1171,160 @@
 
     </div>
   </div>
+  <!-- end form login -->
+
+  <!-- form register -->
+  <div id="frmRegister" class="modal fade modalLogin" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img src="asset/image/TheCosta_logo_horizontal_new.svg" class="logoFrm" />
+          <h4 class="modal-title">register</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="fullNameRegister">Full name</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="fullNameRegister" aria-describedby="basic-fullNameRegister">
+                <span class="input-group-addon" id="basic-fullNameRegister"><i class="fas fa-user"></i></span>
+                <span class="help-block textDescription">Please enter full name</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="emailRegister">Email address</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="emailRegister" aria-describedby="basic-emailRegister">
+                <span class="input-group-addon" id="basic-emailRegister"><i class="fas fa-envelope"></i></span>
+                <span class="help-block textDescription">Please enter email address</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phoneRegister">Phone number</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="phoneRegister" aria-describedby="basic-phoneRegister">
+                <span class="input-group-addon" id="basic-phoneRegister"><i class="fas fa-phone"></i></span>
+                <span class="help-block textDescription">Please enter phone number</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="addressRegister">Address</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="addressRegister" aria-describedby="basic-addressRegister">
+                <span class="input-group-addon" id="basic-addressRegister"><i class="fas fa-map-marker-alt"></i></span>
+                <span class="help-block textDescription">Please enter address</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="passRegister">Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="passRegister" aria-describedby="basic-passRegister">
+                <span class="input-group-addon" id="basic-passRegister"><i class="fas fa-key"></i></span>
+                <span class="help-block textDescription">Please enter Password</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassRegister">Confirm password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="confirmPassRegister" aria-describedby="basic-confirmPassRegister">
+                <span class="input-group-addon" id="basic-confirmPassRegister"><i class="fas fa-key"></i></span>
+                <span class="help-block textDescription">Please enter confirm password</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="capchaForgot">Captcha</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="capchaForgot" aria-describedby="basic-capchaForgot">
+                <span class="input-group-addon addCaptcha" id="basic-capchaForgot"><img src="asset/image/level2/captcha.jpg" /></span>
+                <span class="help-block textDescription">Please enter captcha</span>
+              </div>
+            </div>
+
+            <div class="wrapBtnLogin onlyLogin">
+              <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-edit"></i>Register</button></div></div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="titleOr">or</div>
+
+          <div class="wrapBtnLogin widthFacebookGoogle">
+            <div class="wrapBtnLoginElement"><div class="bgBlack facebook"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-facebook-f"></i>Register Facebook</button></div></div>
+            <div class="wrapBtnLoginElement"><div class="bgBlack google"><button type="submit" class="btn btn-default btnLogin"><i class="fab fa-google"></i>Register Google</button></div></div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="wrapBtnLogin registerAndForgotPass backLogin">
+            <div class="wrapBtnLoginElement"><button type="submit" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmLogin" data-dismiss="modal"><i class="fas fa-angle-double-left"></i>Use your account to login</button></div>
+
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end form register -->
+
+  <!-- form forgot password -->
+  <div id="frmForgotPass" class="modal fade modalLogin" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img src="asset/image/TheCosta_logo_horizontal_new.svg" class="logoFrm" />
+          <h4 class="modal-title">FORGOT PASSWORD</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="emailForgotPass">Email address</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="emailForgotPass" aria-describedby="basic-emailForgotPass">
+                <span class="input-group-addon" id="basic-emailForgotPass"><i class="fas fa-envelope"></i></span>
+                <span class="help-block textDescription">Please enter email address</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="capchaForgot">Captcha</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="capchaForgot" aria-describedby="basic-capchaForgot">
+                <span class="input-group-addon addCaptcha" id="basic-capchaForgot"><img src="asset/image/level2/captcha.jpg" /></span>
+                <span class="help-block textDescription">Please enter captcha</span>
+              </div>
+            </div>
+
+            <div class="wrapBtnLogin onlyLogin">
+              <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-check"></i>Confirm</button></div></div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="titleOr">or</div>
+
+          <div class="wrapBtnLogin registerAndForgotPass backLogin">
+            <div class="wrapBtnLoginElement"><button type="submit" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmLogin" data-dismiss="modal"><i class="fas fa-angle-double-left"></i>Use your account to login</button></div>
+
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end form forgot password -->
 
   <!-- jQuery -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>

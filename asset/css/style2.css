@@ -96,6 +96,11 @@
 /* end button login and register */
 
 /* modal login */
+.modalLogin {
+	padding: 0 !important;
+	overflow: auto;
+}
+
 .modalLogin .modal-dialog {
 	max-width: 500px;
 }
@@ -229,7 +234,7 @@
 	float: none;
 	display: table;
 	margin: auto;
-	width: 150px;
+	width: 160px;
 }
 
 .modalLogin .wrapBtnLogin .wrapBtnLoginElement:nth-child(1){
@@ -332,5 +337,45 @@
 .modalLogin .wrapBtnLogin.registerAndForgotPass .btnLogin:hover {
 	color: #af983d;
 	padding: 0;
+}
+
+.modalLogin .backLogin {
+	margin-top: 0;
+}
+
+.modalLogin .backLogin .btnLogin svg {
+	margin: 0 5px 0 0;
+}
+
+.modalLogin form .addCaptcha {
+	padding: 0;
+} 
+
+.modalLogin form .addCaptcha img {
+	height: 40px;
+	width: auto;
+}
+
+#frmForgotPass .wrapBtnLoginElement .btnLogin {
+	margin-top: 0;
+}
+
+@media (max-width: 767px){
+	.modalLogin .modal-dialog {
+	    max-width: 100%;
+	    margin: auto;
+	}
+}
+
+@media (max-width: 479px){
+	.modalLogin .widthFacebookGoogle .wrapBtnLoginElement {
+		width: 100%;
+		float: none;
+		padding: 0 !important;
+	}
+
+	.modalLogin .widthFacebookGoogle .wrapBtnLoginElement:nth-child(1) {
+		margin-bottom: 15px;
+	}
 }
 /* end modal login */
