@@ -378,6 +378,7 @@
 	top: auto;
 	bottom: -9px;
 	font-size: 12px;
+	white-space: nowrap;
 }
 
 .modalLogin .widthFacebookGoogle .wrapBtnLoginElement.email {
@@ -469,9 +470,22 @@
 	    margin: auto;
 	}
 
+	.modalLogin .modal-content {
+		height: 100vh;
+	}
+
 	.modalLogin .backLogin .wrapBtnLoginElement {
 		width: 100%;
 		padding: 0 !important;
+	}
+
+	.modalLogin .wrapBtnLogin.backLogin .wrapBtnLoginElement:nth-child(2) .btnLogin {
+		text-align: left;
+		margin-top: 15px !important;
+	}
+
+	.modalLogin .formConfirmRersident .lblCheckbox2 {
+		margin-left: 0;
 	}
 }
 
