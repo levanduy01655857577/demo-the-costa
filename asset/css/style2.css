@@ -488,7 +488,7 @@
 .menuUser {
 	position: fixed;
 	top: 50%;
-	left: -250px;
+	right: -250px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -516,19 +516,24 @@
 }
 
 .menuUser.showMenuUser {
-	left: 0;
+	right: 0;
 }
 
 .menuUser .icMenuUser {
 	position: absolute;
 	top: 0;
-	right: -50px;
+	left: -50px;
 	font-size: 16px;
 	color: white;
 	width: 50px;
 	text-align: center;
 	padding:15px 10px;
-	background-color: #af983d;
+	background-color: rgba(175, 152, 61, 0.7);
+}
+
+.menuUser .icMenuUser:hover,
+.menuUser.showMenuUser .icMenuUser {
+	background-color: rgba(175, 152, 61, 1);
 }
 
 .menuUser.showMenuUser .icMenuUser {
@@ -541,6 +546,9 @@
 	margin: 0;
 	background-color:#3d3827;
 	width: 250px;
+}
+
+.menuUser.showMenuUser .list {
 	-webkit-box-shadow: 0px 3px 29px 0px rgba(0, 0, 0, 0.54);
     -moz-box-shadow: 0px 3px 29px 0px rgba(0, 0, 0, 0.54);
     box-shadow: 0px 3px 29px 0px rgba(0, 0, 0, 0.54);
