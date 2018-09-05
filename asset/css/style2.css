@@ -550,10 +550,18 @@
 	position: relative;
 }
 
+.menuUser .list {
+	padding: 10px 0;
+}
+
+.menuUser .list li {
+	padding: 0 20px;
+}
+
 .menuUser .list li a {
-	display: block;
-	padding: 10px 20px;
-	font-size: 13px;
+	display: table;
+	padding: 10px 0;
+	font-size: 16px;
 	text-transform: uppercase;
 	z-index: 900;
 	color: white;
@@ -566,8 +574,8 @@
 	width: 0;
 	height: 2px;
 	position: absolute;
-	left: 0;
-	bottom: 0;
+	left: 3px;
+	bottom: 10px;
 	content: '';
 	z-index: -1;
 }
@@ -577,6 +585,10 @@
 }
 
 .menuUser .list li:hover a:before {
-	width: 100%;
+	width: calc(100% - 6px);
+	width: -webkit-calc(100% - 6px);
+	width: -moz-calc(100% - 6px);
+	width: -ms-calc(100% - 6px);
+	width: -o-calc(100% - 6px);
 }
 /* end menu user login success */
