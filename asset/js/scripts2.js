@@ -26,6 +26,12 @@ if($('.modalLogin form').length > 0){
 		var allowSubmitForm = allowSubmitFormPopup('#frmForgotPass');
 		if(allowSubmitForm != 1) return false;
 	});
+
+	// Show menu user
+	$('.icMenuUser').click(function(){alert(111);
+		if($('.menuUser').hasClass('showMenuUser')) $('.menuUser').removeClass('showMenuUser');
+		else $('.menuUser').addClass('showMenuUser');
+	});
 }
 
 function allowSubmitFormPopup(nameForm){
