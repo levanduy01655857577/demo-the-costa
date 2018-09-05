@@ -571,13 +571,18 @@
 
 .menuUser .list li a:before {
 	background-color: #af983d;
-	width: 0;
 	height: 2px;
 	position: absolute;
 	left: 3px;
+	right: 3px;
 	bottom: 10px;
 	content: '';
 	z-index: -1;
+	-webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform .25s ease;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
 }
 
 .menuUser .icMenuUser:hover {
@@ -585,10 +590,16 @@
 }
 
 .menuUser .list li:hover a:before {
-	width: calc(100% - 6px);
-	width: -webkit-calc(100% - 6px);
-	width: -moz-calc(100% - 6px);
-	width: -ms-calc(100% - 6px);
-	width: -o-calc(100% - 6px);
+	-webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+    width: calc(100% - 6px);
+    width: -webkit-calc(100% - 6px);
+    width: -moz-calc(100% - 6px);
+    width: -ms-calc(100% - 6px);
+    width: -o-calc(100% - 6px);
 }
 /* end menu user login success */
