@@ -488,7 +488,7 @@
 .menuUser {
 	position: fixed;
 	top: 50%;
-	right: -250px;
+	left: -250px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -516,13 +516,13 @@
 }
 
 .menuUser.showMenuUser {
-	right: 0;
+	left: 0;
 }
 
 .menuUser .icMenuUser {
 	position: absolute;
 	top: 0;
-	left: -50px;
+	right: -50px;
 	font-size: 16px;
 	color: white;
 	width: 50px;
