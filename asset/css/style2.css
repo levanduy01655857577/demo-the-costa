@@ -1,27 +1,4 @@
-@media (max-width: 479px){
-	.tab-booking .nav-tabs li a {
-		font-size: 14px;
-	}
-}
-
-@media (max-width: 359px){
-	.tab-booking .item-room .action .button-action span {
-		font-size: 11px;
-		text-align: center;
-		-webkit-transform:unset;
-    	transform: unset; 
-	}
-
-	.tab-booking .item-room .action .button-action {
-		padding: 10px;
-		text-align: center;
-	}
-}
-
-/*===================================*/
-
 /* giao dien front end 2 */
-
 .LoginAndRegister .btn,
 .modalLogin .close,
 .modalLogin .btn,
