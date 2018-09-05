@@ -30,9 +30,14 @@ if($('.modalLogin form').length > 0){
 
 // Show menu user
 function showMenuUser(){
-	$('.menuUser').toggleClass('showMenuUser');
+	$('.menuUser').addClass('showMenuUser');
 }
 
+function hideMenuUser(){
+	$('.menuUser').removeClass('showMenuUser');
+}
+
+// Submit form
 function allowSubmitFormPopup(nameForm){
 	var allowSubmitForm = 1;
 	$(nameForm +' .form-control').each(function(){

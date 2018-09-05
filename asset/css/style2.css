@@ -496,23 +496,31 @@
 	-o-transform: translateY(-50%);
 }
 
-.menuUser .fa-times {
-	display: none;
+.menuUser .btnShowMenuUser {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 }
 
-.menuUser.showMenuUser .fa-times {
-	display: table;
-	margin: auto;
+.menuUser.showMenuUser .btnShowMenuUser {
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 
-
-.menuUser .fa-user {
-	display: table;
-	margin: auto;
+.menuUser .btnCloseMenuUser {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: 0;
 }
 
-.menuUser.showMenuUser .fa-user {
-	display: none;
+.menuUser.showMenuUser .btnCloseMenuUser {
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 
 .menuUser.showMenuUser {
@@ -521,7 +529,6 @@
 
 .menuUser .icMenuUser {
 	position: absolute;
-	top: 0;
 	right: -50px;
 	font-size: 16px;
 	color: white;
@@ -534,10 +541,6 @@
 .menuUser .icMenuUser:hover,
 .menuUser.showMenuUser .icMenuUser {
 	background-color: rgba(175, 152, 61, 1);
-}
-
-.menuUser.showMenuUser .icMenuUser {
-	top: 0;
 }
 
 .menuUser .list {
