@@ -384,6 +384,7 @@
 .modalLogin .widthFacebookGoogle .wrapBtnLoginElement.email {
 	width: 100%;
 	padding-right: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .modalLogin .widthFacebookGoogle .wrapBtnLoginElement.email .bgBlack {
