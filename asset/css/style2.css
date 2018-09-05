@@ -5,7 +5,11 @@
 .modalLogin .wrapBtnLogin .bgBlack:before,
 .modalLogin .textDescription,
 .slideCheckbox .lblCheckbox,
-.modalLogin form .form-group .input-group {
+.modalLogin form .form-group .input-group,
+.menuUser .list li a:before,
+.menuUser a,
+.menuUser,
+.menuUser .icMenuUser {
 	transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -17,7 +21,7 @@
 	position: fixed;
 	top: 50%;
 	left: -135px;
-	height: 89px;
+	height:42px;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -449,7 +453,7 @@
 	}
 
 	.modalLogin .modal-content {
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	.modalLogin .backLogin .wrapBtnLoginElement {
@@ -479,3 +483,88 @@
 	}
 }
 /* end modal login */
+
+/* menu user login success */
+.menuUser {
+	position: fixed;
+	top: 50%;
+	left: -250px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+.menuUser:hover {
+	left: 0;
+	cursor: pointer;
+}
+
+.menuUser .icMenuUser {
+	position: absolute;
+	top: 50%;
+	right: -50px;
+	font-size: 16px;
+	color: white;
+	width: 50px;
+	text-align: center;
+	padding:15px 10px;
+	background-color: #af983d;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+.menuUser:hover .icMenuUser {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	top: 0;
+}
+
+.menuUser .list {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	background-color: #5b5541;
+	width: 250px;
+}
+
+.menuUser .wrapList {
+	position: relative;
+}
+
+.menuUser .list li a {
+	display: block;
+	padding: 10px 20px;
+	font-size: 13px;
+	text-transform: uppercase;
+	z-index: 900;
+	color: white;
+	position: relative;
+}
+
+.menuUser .list li a:before {
+	background-color: black;
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: -1;
+}
+
+.menuUser .list li:hover a:before {
+	width: 100%;
+}
+
+.menuUser .list li:hover a {
+	padding-left: 25px;
+}
+/* end menu user login success */
