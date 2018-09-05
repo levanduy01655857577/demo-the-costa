@@ -550,7 +550,7 @@
 }
 
 .menuUser .list li a:before {
-	background-color: black;
+	background-color: #af983d;
 	width: 0;
 	height: 100%;
 	position: absolute;
