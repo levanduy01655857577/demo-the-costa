@@ -485,6 +485,19 @@
 /* end modal login */
 
 /* menu user login success */
+.windowMenuUser {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.windowMenuUser.show {
+	display: block;
+}
+
 .menuUser {
 	position: fixed;
 	top: 50%;

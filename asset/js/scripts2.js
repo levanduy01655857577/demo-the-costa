@@ -31,11 +31,17 @@ if($('.modalLogin form').length > 0){
 // Show menu user
 function showMenuUser(){
 	$('.menuUser').addClass('showMenuUser');
+	$('.windowMenuUser').addClass('show');
 }
 
 function hideMenuUser(){
 	$('.menuUser').removeClass('showMenuUser');
+	$('.windowMenuUser').removeClass('show');
 }
+
+$('.windowMenuUser').click(function(){
+	hideMenuUser();
+});
 
 // Submit form
 function allowSubmitFormPopup(nameForm){
