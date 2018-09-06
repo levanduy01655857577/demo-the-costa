@@ -1181,14 +1181,14 @@
               </div>
             </div>
 
-            <div class="form-group formConfirmRersident">              
+            <div class="form-group formConfirmRersident genderProfle">   
+              <label class="lblCheckbox2" for="mainProfile">Gender</label>           
               <label class="slideCheckbox" for="mainProfile">
-                <span class="textLeft">Yes</span>  
+                <span class="textLeft">Female</span>  
                 <input type="checkbox" class="inputCheck" id="mainProfile" />
                 <span class="lblCheckbox"></span>
-                <span class="textRight">No</span>
+                <span class="textRight">Male</span>
               </label>
-              <label class="lblCheckbox2" for="mainProfile">Are you male ?</label>
               <div class="clearfix"></div>
             </div>
 
@@ -1196,6 +1196,69 @@
               <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-check"></i>Send</button></div></div>
             </div>
           </form>
+        </div>
+
+        <div class="modal-footer">
+          <div class="wrapBtnLogin registerAndForgotPass backLogin">
+            <div class="wrapBtnLoginElement"><button type="button" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmChangePass" data-dismiss="modal">Change PASSWORD<i class="fas fa-angle-double-right"></i></button></div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end form forgot password -->
+
+  <!-- form forgot password -->
+  <div id="frmChangePass" class="modal fade modalLogin" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Change password</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="passCurrentChangePass">Current password</label>
+              <div class="input-group" id="group-passCurrentChangePass">
+                <input type="password" class="form-control" id="passCurrentChangePass" aria-describedby="basic-passCurrentChangePass">
+                <span class="help-block textDescription" id="description-passCurrentChangePass">Please enter current password</span>
+                <span class="input-group-addon" id="basic-passCurrentChangePass"><i class="fas fa-key"></i></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="passNewChangePass">Password</label>
+              <div class="input-group" id="group-passNewChangePass">
+                <input type="password" class="form-control" id="passNewChangePass" aria-describedby="basic-passNewChangePass">
+                <span class="help-block textDescription" id="description-passNewChangePass">Please enter Password</span>
+                <span class="input-group-addon" id="basic-passNewChangePass"><i class="fas fa-key"></i></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassChangePass">Confirm password</label>
+              <div class="input-group" id="group-confirmPassChangePass">
+                <input type="password" class="form-control" id="confirmPassChangePass" aria-describedby="basic-confirmPassChangePass">
+                <span class="help-block textDescription" id="description-confirmPassChangePass">Please enter confirm password</span>
+                <span class="input-group-addon" id="basic-confirmPassChangePass"><i class="fas fa-key"></i></span>
+              </div>
+            </div>
+
+            <div class="wrapBtnLogin onlyLogin">
+              <div class="wrapBtnLoginElement"><div class="bgBlack"><button type="submit" class="btn btn-default btnLogin"><i class="fas fa-check"></i>Send</button></div></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <div class="wrapBtnLogin registerAndForgotPass backLogin">
+            <div class="wrapBtnLoginElement"><button type="button" class="btn btn-default btnLogin" data-toggle="modal" data-target="#frmUpdateInfoUser" data-dismiss="modal"><i class="fas fa-angle-double-left"></i>Back to user profile</button></div>
+            <div class="clearfix"></div>
+          </div>
         </div>
       </div>
     </div>
