@@ -654,3 +654,15 @@
 	}
 }
 /* end menu user login success */
+
+/* form user profile */
+#frmUpdateInfoUser .formConfirmRersident {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 767px){
+	#frmUpdateInfoUser .formConfirmRersident .lblCheckbox2 {
+		margin-left: 5px;
+	}
+}
+/* end form user profile */
